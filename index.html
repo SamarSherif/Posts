@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cairo:400,600,700&amp;subset=arabic" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light  ">
+        <a class="navbar-brand fontColor" href="#" style="font-weight: 800">مستقبلي</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+                <li class="nav-item dropdown separateLine ">
+                    <a class="nav-link dropdown-toggle fontColor" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">عام</a>
+                        <a class="dropdown-item" href="#">شخصية</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">الغاء</a>
+                    </div>
+                </li>
+                <li class="nav-item  separateLine">
+                    <a href="#" class="notification">
+                        <span><i class="fa fa-bell"></i></span>
+                        <span class="badge">3</span>
+                    </a>
+                    <a href="#" class="notification">
+                        <span><i class="fa fa-comment-alt"></i></span>
+                        <span class="badge">2</span>
+                    </a>
+                </li>
+                <li class="nav-item separateLine">
+                    <a class="nav-link fontColor" href="#"> <i class="fab fa-cloudscale"></i> أكتشف <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item separateLine">
+                    <a class="nav-link fontColor" href="#"><img src="imgs/man.png" class="avatar" alt=""> محمد</a>
+                </li>
+            </ul>
+            <form class="form-inline  mr-auto mt-2 mt-lg-0">
+                <div class="input-group " dir="ltr">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-blue" type="button" id="button-addon1"><i class="fa fa-search"></i></button>
+                    </div>
+                    <input type="text" dir="rtl" class="form-control" placeholder="بحث" aria-label="Example text with button addon"
+                        aria-describedby="button-addon1">
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div style="width:70%;margin:auto">
+        <div class="row" style="background-color:#e2e3e3;margin:30px 0;" onclick="select(event)">
+            <div class="col-sm-2 ">
+                <h4 class="selected ">خاصة</h4>
+            </div>
+            <div class="col-sm-2 ">
+                <h4 class="selected">مستقبلية</h4>
+            </div>
+            <div class="col-sm-2 ">
+                <h4 class="selected">مرسلة</h4>
+            </div>
+            <div class="col-sm-2 ">
+                <h4 class="selected">أصدقاء</h4>
+            </div>
+            <div class="col-sm-2 ">
+                <h4 class="selected">مجهولين</h4>
+            </div>
+            <div class="col-sm-2 ">
+                <h4 class="selected active">الكل</h4>
+            </div>
+        </div>
+        <div class="unknown">
+            <span style="color:white">مجهول</span>
+            <img src="imgs/user.png" alt="img">
+        </div>
+        <div class="row " id="talkbubble">
+            <div class="col-md-12" style="text-align:right;padding:20px">
+                <div style="float:right;width:50%">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="imgs/man3.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="padding: 10px;">
+                            <div class="row">
+                                <span style="font-weight: 700;color: #04398e;">محمد عبد النعيم</span>
+                            </div>
+                            <div class="row">
+                                <span style="color: gray;font-size: 14px;"><i class="fa fa-lock"></i> خاص</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="float:left;margin-left:-20px">
+                    <button class="btn borderedBtn"> 13/8/2019 <i class="fas fa-comment-alt"></i></button>
+                    <button class="btn filledBtn"> 22/5/2018 <i class="fas fa-comment-alt"></i></button>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <p style="text-align: right;padding: 20px">غريمه اكتوبر الساحة على في, قبل قد تجهيز أجزاء
+                    الضروري, وقام بتخصيص جديداً قد بين. يذكر ٠٨٠٤ يونيو
+                    لم بال, وقد العالم الإتحاد قد. ذات مع الجنوب المعاهدات, ع
+                    مدن مهمّات التقليدية. الأجل مساعدة للمجهود بحق كل, إذ هذه
+                    النفط وإقامة. بقيادة انتباه مواقعها فقد هو, وقد بداية
+                    الشرقية التقليدي قد. مارد الثقيلة بريطانيا، كلّ بل.
+                    دون والتي تزامناً الأمريكية أن, تم لعملة فرنسية أخر.
+                </p>
+            </div>
+            <div class="col-sm-12">
+                <ul class="infoList">
+                    <li>34 <img src="imgs/heart.png" alt=""><img src="imgs/happy.png" alt=""> </li>
+                    <li class="separateLine">23 تعليقات</li>
+                    <li class="separateLine">9 مشاركات</li>
+                </ul>
+                <ul class="reactionList">
+                    <li><button class="btn"> <img src="imgs/smile (1).png" alt=""> </button></li>
+                    <li class="separateLine"> <button class="btn"><img src="imgs/speech-bubble-outline-of-rectangular-shape.png"
+                                alt=""> </button> </li>
+                    <li class="separateLine"> <button class="btn"><img src="imgs/share-option.png" alt=""></button>
+                    </li>
+                    <li style="float:left"> <button class="btn"> <img src="imgs/more.png" alt=""></button> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <button type="button" class="btn popUpBtn" data-toggle="modal" data-target="#popUp">
+            <i class="fas fa-comment-alt"></i>
+        </button>
+        <div class="modal fade" id="popUp" tabindex="-1" role="dialog" aria-labelledby="popUpLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="popUpLabel">رسالة جديدة</h5>
+                        <button type="button" class="close" data-dismiss="modal" style="margin-left:0" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="text-align: right">
+                        <div class="row">
+                            <span>رسالة :</span>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <textarea cols="60" rows="3" placeholder="اكتب هنا...."></textarea>
+                            </div>
+                            <div class="col-md-6" style=" text-align: left">
+                                <button class="btn add"><i class="fas fa-microphone"></i></button>
+                                <button class="btn add"><i class="fas fa-video"></i></button>
+                                <button class="btn add"><i class="fas fa-camera"></i></button>
+                                <button class="btn add"><i class="fas fa-smile"></i></button>
+                            </div>
+                            <div class="col-sm-12">
+                                <span>تاريخ الوصول :</span>
+                                <select>
+                                    <option value="">اليوم</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                                <select>
+                                    <option value="">الشهر</option>
+                                    <option value="">يناير</option>
+                                    <option value="">فبراير</option>
+                                    <option value="">مارس</option>
+                                    <option value="">ابريل</option>
+                                </select>
+                                <select>
+                                    <option value="">السنة</option>
+                                    <option value="">2019</option>
+                                    <option value="">2018</option>
+                                    <option value="">2017</option>
+                                    <option value="">2016</option>
+                                </select>
+                                <span>ميعاد الوصول :</span>
+                                <input type="time">
+                                <span> مشاركة :</span>
+                                <select>
+                                    <option value="">عام</option>
+                                    <option value="">شخصية</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn send">ارسال</button>
+                        <button class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
